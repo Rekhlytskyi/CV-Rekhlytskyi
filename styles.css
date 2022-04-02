@@ -27,6 +27,11 @@ div {
   background-color: rgb(236, 236, 236);
 }
 
+.photo-div {
+  height: 320px;
+  width: 370px;
+}
+
 .image {
   margin-bottom: 50px;
 }
@@ -302,16 +307,7 @@ footer {
   margin-right: 40px;
 }
 
-.footer-link {
-  text-decoration-line: none;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
-}
 
-.footer-link:hover {
-  color: rgb(255, 255, 255);
-  opacity: 1;
-}
 
 .contacts {
   display: flex;
@@ -330,7 +326,10 @@ footer {
 }
 .contacts-link:hover .icon,
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus .icon,
+.contacts-link:active .icon,
+.contacts-link:focus,
+.contacts-link:active {
   background-color: white;
   fill: black;
 }
