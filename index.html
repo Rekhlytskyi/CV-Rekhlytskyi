@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,11 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="../CV-Rekhlytskyi/img/sprite.svg" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Rekhlytskyi CV</title>
   </head>
 
@@ -90,7 +94,7 @@
         <!-- attorney's -->
         <section class="aside_left_section">
           <h3 class="aside_section_title">Attorney's certificate</h3>
-          <p class="attorney_p">Attended to bar February 15, 2022</p>
+          <p class="attorney_p">Admitted to bar February 15, 2022</p>
         </section>
       </aside>
 
@@ -128,7 +132,7 @@
           <ul>
             <li class="ap_list_item">
               Legal expert for the Ministry of Digital Transformation Workgroup
-              in couse of drafint the Draft Law "On Virtual Assets" in 2020
+              in couse of drafting the Draft Law "On Virtual Assets" in 2020
             </li>
             <li class="ap_list_item">
               Lecturer for the Business Consulting Academy (IP, IT, Franchise
@@ -275,67 +279,45 @@
       </main>
     </div>
     <footer>
-      <section>
-        <h4 class="contacts-title">Contacts</h4>
-        <nav>
-          <div class="container">
-            <ul class="contacts">
-              <li class="contacts-icon">
-                <a
-                  href="https://ua.linkedin.com/in/nick-rekhlytskyi-48290379"
-                  class="contacts-link"
-                  target="blank"
-                >
-                  <svg class="icon">
-                    <use
-                      href="../CV-Rekhlytskyi/img/sprite.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts-icon">
-                <a
-                  href="https://facebook.com/youjanin"
-                  target="blank"
-                  class="contacts-link"
-                >
-                  <svg class="icon">
-                    <use
-                      href="../CV-Rekhlytskyi/img/sprite.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts-icon">
-                <a
-                  href="mailto:rekhlytskyi@outlook.com"
-                  target="blank"
-                  class="contacts-link"
-                >
-                  <svg class="icon">
-                    <use
-                      href="../CV-Rekhlytskyi/img/sprite.svg#icon-mail"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts-icon">
-                <a
-                  href="tel:+380673299660"
-                  target="blank"
-                  class="contacts-link"
-                >
-                  <svg class="icon">
-                    <use
-                      href="../CV-Rekhlytskyi/img/sprite.svg#icon-telephone"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </section>
+      <h4 class="contacts-title">Contacts</h4>
+      <ul class="contacts-list">
+        <li class="contacts__item">
+          <a
+            href="https://www.facebook.com/youjanin/"
+            class="contact__link"
+            target="_blank"
+          >
+            <svg class="contact__icon">
+              <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/nick-rekhlytskyi-48290379/"
+            class="contact__link"
+            target="_blank"
+          >
+            <svg class="contact__icon">
+              <use href="./img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+380673299660" class="contact__link">
+            <svg class="contact__icon">
+              <use href="./img/sprite.svg#icon-tel"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:rekhlytskyi@outlook.com" class="contact__link">
+            <svg class="contact__icon">
+              <use href="./img/sprite.svg#icon-mail-modal"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
